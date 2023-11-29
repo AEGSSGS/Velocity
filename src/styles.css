@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: Open Sans , sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 192.308% */
+}
+@layer components{
+        .container{
+                @apply !max-w-[1080px] mx-auto px-5 
+        }
+        .btn{
+                @apply text-white text-[16px] font-normal leading-[21px] tracking-[2px] uppercase
+                bg-[#69B9FF] py-[12px] px-[30px] rounded-[4px] inline-block
+        }
+        .Clicked:is(:link, :active, :visited){
+                @apply bg-[#2E80B6] transition-[1s]
+        }
+}
